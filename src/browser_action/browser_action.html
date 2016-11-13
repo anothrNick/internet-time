@@ -1,19 +1,29 @@
 <!doctype html>
 <style type="text/css">
-	#mainPopup {
+	body {
+		margin: 0px;
+	}
+	html {
 		height: 200px;
-		width: 200px;
+		width: 250px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
 	}
-	h1 {
-		font-size: 2em;
+	table {
+		width: 100%;
+	}
+	#table td {
+		padding: 5px;
+		border-bottom: 1px solid #EFEFEF;
 	}
 </style>
 
 <div id="mainPopup">
 
-<table id="table"></table>
+	<table>
+		<tbody id="table"></tbody>
+	</table>
 
 </div>
-<script type="text/javascript" src="scripts.js">
-</script>
+
+<script type="text/javascript" src="moment.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
