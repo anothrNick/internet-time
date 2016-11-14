@@ -2,7 +2,7 @@
   "name": "Web Page Timer",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
+  "description": "Tracks the time you spend on each of your favorite websites",
   "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/clock_16.png",

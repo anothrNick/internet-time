@@ -12,10 +12,8 @@ chrome.storage.local.get('hosts', function(result){
 	for (var i = 0; i < array.length; i++) {
 		var key = array[i][0];
 		var host = array[i][1];
-    	if(hosts[key].duration) {
-	    	var html = createRow(key, host);
-	    	document.getElementById("table").innerHTML = document.getElementById("table").innerHTML + html;
-    	}
+    	var html = createRow(key, host);
+    	document.getElementById("table").innerHTML = document.getElementById("table").innerHTML + html;
 	}
 });
 
