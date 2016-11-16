@@ -1,6 +1,6 @@
 chrome.storage.local.get('hosts', function(result){
     hosts = result.hosts;
-    if(Object.keys(hosts).length) {
+    if(hosts && Object.keys(hosts).length) {
 	    var array=[];
 		for(a in hosts){
 			array.push([a,hosts[a]])

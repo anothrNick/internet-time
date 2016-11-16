@@ -6,6 +6,8 @@ chrome.extension.onMessage.addListener(
 
   	chrome.storage.local.get('hosts', function(result){
   		var hosts = result.hosts;
+  		if(!hosts) hosts = {};
+
 	  	if(hosts.hasOwnProperty(request.hostname)) {
 	  		hosts[request.hostname].count++;
 	  	}
@@ -24,6 +26,8 @@ chrome.extension.onMessage.addListener(
 chrome.tabs.onActivated.addListener(function(event) {
   	chrome.storage.local.get('hosts', function(result){
   		var hosts = result.hosts;
+  		if(!hosts) hosts = {};
+  		
 		if(activeStart) {
 			var timeSpent = new Date().getTime() - activeStart;
 		  	if(hosts.hasOwnProperty(lastActive)) {
